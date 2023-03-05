@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="ejemplo">
+        <br/>
+        Hola a <span>todos</span> como estan?
+        <br/>
+    </p>
+    
+    // DIFERENCIA entre innerHTML, innerText y textContent
+    <script> //Ejecutar en la consola del browser
+        const parrafo = document.getElementById("ejemplo");
+        console.log(parrafo.innerText); //Trae el texto contenido en el parrafo y sus saltos
+        console.log(parrafo.innerHTML); //Trae tal cual el contenido del parrafo en HTML con tags
+        console.log(parrafo.textContent); //Trae el texto del párrafo sin saltos de linea
+    </script>
+</body>
+</html>

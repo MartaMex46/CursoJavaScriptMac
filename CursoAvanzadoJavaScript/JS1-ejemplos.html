@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="script.js">
+</head>
+<body>
+    <h1>titulo</h1>
+    <h2>subtitulo</h2>
+    <p id="relevante">Elemento 1</p>
+    <p class="importante">Elemento 2</p>
+    <p class="importante">Elemento3</p>
+
+    <div>
+        <p class="importante">Elemento anidado 1</p>
+        <p class="importante">Elemento anidado 2</p>
+    </div>
+    
+    <a href="https://www.google.com/" id="link">Click aquí</a>
+
+    <button>Haz click aquí</button>
+
+    <div>
+        <div>
+            <div>
+                <div id="importante">
+                    <p class="importante">Parrafo anidado 1</p>
+                    <p class="importante">Parrafo anidado 2</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        
+        // ENCONTRANDO ELEMENTOS
+
+        // const element = document.getElementById("relevante"); ->> Devuelve un nodo
+        // const parrafosimportantes = document.getElementsByClassName("importante");
+        // const parrafosimportantes2 = document.querySelectorAll("p.importante");
+        // const parrafos = document.getElementsByTagName ("p");
+        // const titulos = document.getElementsByTagName("h1");
+        // const parrafosAnidados = document.querySelectorAll("div p.importante");
+
+        // console.log(element);
+        // console.log(parrafosimportantes);
+        // console.log(parrafosimportantes2);
+        // console.log(parrafos);
+        // console.log(titulos);
+        // console.log(parrafosAnidados);
+        // console.log(parrafosAnidados[0]);
+
+        // const anchor = document.getElementById("link");
+
+        // AGREGAR PROPIEDADES 
+        // anchor.href = "https://www.youtube.com";
+        // anchor.style.color = "red";
+        // anchor.style["margin-left"] = "20px";
+
+        // const button = document.querySelector("button");
+        // button.setAttribute("disabled","deshabilitado");
+
+        // VERIFICAR PROPIEDADES
+        // console.log(button.hasAttribute("disabled"));
+        // console.log(button.getAttribute("disabled"));
+
+        // CAMBIAR PROPIEDADES DE ELEMENTOS
+        // const parrafosAnidadosImportantes = document.querySelector("div p.importante");
+        // console.log(parrafosAnidadosImportantes);
+        // parrafosAnidadosImportantes.innerHTML = "Texto modificado";
+        // parrafosAnidadosImportantes.innerHTML = 84+20;
+
+        // AGREGAR ELEMENTOS
+        // const footer = document.createElement("footer");
+        // document.body.appendChild(footer); //Inserta elemento en el body
+
+        // INSERTAR ELEMENTOS
+        // const subtitle = document.getElementsByTagName("h2")[0];
+        // document.body.insertBefore(footer, subtitle);
+
+        // REMOVER ELEMENTOS
+        // const div = document.querySelector("div"); //Nodo Padre
+        // const anidado2 = document.querySelector("div p.importante:nth-child(2)"); //Nodo hijo
+        // div.removeChild(anidado2); //Sentencia que remueve el elemento
+
+        // REEMPLAZAR ELEMENTOS
+        // const newButton = document.createElement("button");
+        // newButton.innerHTML = "Click aqui";
+        // const anidado1 = document.querySelector("div p.importante:first-child");
+        // div.replaceChild(newButton, anidado1);
+
+        // OBTENER (referenciar) ELEMENTOS CERCANOS
+        // const divImportante = document.getElementById("importante");
+        // console.log(divImportante.children[0].nextElementSibling.previousElementSibling);
+        // console.log(divImportante.parentNode);
+
+    </script>
+</body>
+</html>

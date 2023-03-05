@@ -1,0 +1,11 @@
+{
+    "nombre": "Juan",
+    "edad": 30,
+    "ciudadanoAmericano": true,
+    "idiomas": {
+      "en": "avanzado",
+      "es": "nativo",
+      "fr": "basico"
+    },
+    "habilidades": ["HTML", "CSS", "JavaScript"]
+  }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- Eventos y handler -->
+    <!-- <button onclick="alert('Hola a todos desde un tag')">Haz click</button> -->
+    <!-- <button onclick="saludar()">Haz click</button> // Se pasa el evento por referencia -->
+    <!-- <button id="boton">Haz click</button> // Se le asigna el evento desde el handler -->
+   
+    <!-- //Prevent DEFAULT -->
+
+    <!-- <a href="https://www.google.com" id="link">google</a> -->
+    
+    <!--MOUSE EVENTS-->
+    <div style="width: 200px; height: 200px; background-color: rosybrown;" 
+    onmouseover="console.log('over')" onmouseout="console.log('out')"> Pasa el mouse    
+    </div>
+
+    <div style="width: 200px; height: 200px; background-color: rgb(114, 111, 211);" 
+        onmousedown="console.log('down')" onmouseup="console.log('up')">
+            Click y mantén
+    </div>
+
+    
+
+    <script>
+
+        //EVENTOS
+        // function saludar(){
+        //     alert("Hola a todos desde un evento en JavaScript");
+        // }
+
+        //HANDLER
+        // const boton = document.querySelector("#boton");
+        // boton.addEventListener("click", saludar);
+
+        // PREVENT DEFAULT
+
+        // function navegar(evento){
+        //     console.log("El evento fue recibido en el hipervinculo")
+        //     evento.preventDefault();
+        //     evento.stopPropagation();
+        // };
+
+        // function observador(){
+        //     console.log("El body también recibió el evento");
+        // };
+
+        // const link = document.querySelector("#link");
+        // link.addEventListener("click", navegar);
+        // link.removeEventListener("click", navegar);
+
+        // // document.body.addEventListener("click", observador);
+
+
+    </script>
+</body>
+</html>

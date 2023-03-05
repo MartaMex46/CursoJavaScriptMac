@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cloname">
+        <p>Primero</p>
+        <p id="demo"></p>
+        <p id="parrafo" class="clase 1 clase 2"></p>
+    </div>
+
+    <form id="formulario">
+        <input type="text" id="nombre" value="ejemplo" >
+    </form>
+    
+    <script>
+
+        // //CLONAR ELEMENTOS
+        // let objetivo = document.querySelector("div.cloname > p");
+        // let clon = objetivo.cloneNode(true); //Con true clona el elemento y su contenido
+        // document.body.appendChild(clon);
+        // console.log(clon);
+
+        // // Crea e introduce un elemento con texto con JavaScript
+        // let text = 'Texto que se "introduce" con JavaScript'; 
+        // document.getElementById("demo").innerHTML = text;
+
+        // //CAMBIAR CLASES DE ELEMENTOS
+        // let parrafo = document.getElementById("parrafo");
+        // parrafo.className = `${parrafo.className} clase 3`;
+        // console.log(parrafo.className);
+
+        // FORMULARIOS
+        // const formulario = document.getElementById("formulario");
+        // console.log(formulario);
+        // console.log(document.forms[0].elements[0]);
+        // console.log(document.forms[0].elements['nombre'].value);
+
+        function submit (event){
+            event.preventDefault();
+            if(document.forms[0].elements["nombre"].value !== ""){
+                console.log("enviando");
+            }
+        }
+
+        formulario.addEventListener("submit", submit);
+        
+    </script>
+</body>
+</html>
